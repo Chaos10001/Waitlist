@@ -4,13 +4,21 @@ import MainPng from "../assets/Group 1.png";
 
 const Main = () => {
   return (
-    <div className="text-center justify-center items-center relative md:h-[140vh] bg-black px-2">
+    <div className="text-center justify-center items-center relative md:h-[140vh] h-[118vh] bg-black px-2">
       <img className="mx-auto" src={logo} alt="" />
       <div className="font-Sora space-y-5">
-        <p className="text-white text-lg px-2">
+        <div className="md:hidden ">
+          <p className="text-white text-sm">
+            Elevate Your Entrepreneurial Journey - For Free
+          </p>
+          <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem]">
+            Subscribe to a community of successful founders.
+          </h1>
+        </div>
+        <p className="text-white text-sm hidden md:block">
           Elevate Your Entrepreneurial Journey - For Free
         </p>
-        <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem]">
+        <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem] hidden md:block">
           Subscribe to a community of successful founders.
         </h1>
         <p className="text-gray-300 md:text-lg text-md md:mx-[22rem]">
@@ -28,7 +36,7 @@ const Main = () => {
           Join a community of founders, startups and online business owners like
           you
         </p>
-        <div >
+        <div>
           <input
             className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
             type="email"
@@ -39,7 +47,7 @@ const Main = () => {
           </button>
         </div>
       </div>
-      <div className="absolute bottom-0 pointer-events-none hidden md:block">
+      <div className="absolute bottom-0 pointer-events-none ">
         <img src={MainPng} alt="" />
       </div>
     </div>
