@@ -3,9 +3,9 @@ import Main from "./component/Main";
 
 function App() {
   return (
-    <div className="bg-black ">
+    <div className=" ">
       <Main />
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
