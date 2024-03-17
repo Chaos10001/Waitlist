@@ -62,7 +62,7 @@ const Main = () => {
       <div className="text-center justify-center md:hidden items-center px-2 bg-black">
         <img className="mx-auto" src={logo} alt="" />
         <div className="font-Sora space-y-5">
-          <div className="md:hidden ">
+          <div>
             <p className="text-white text-sm">
               Elevate Your Entrepreneurial Journey - For Free
             </p>
@@ -70,12 +70,7 @@ const Main = () => {
               Subscribe to a community of successful founders.
             </h1>
           </div>
-          <p className="text-white text-sm hidden md:block">
-            Elevate Your Entrepreneurial Journey - For Free
-          </p>
-          <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem] hidden md:block">
-            Subscribe to a community of <br /> successful founders.
-          </h1>
+
           <p className="text-gray-300 md:text-lg text-md md:mx-[22rem]">
             Subscribe to{" "}
             <span className="text-primary text-lg">MainFounder</span>
@@ -105,8 +100,8 @@ const Main = () => {
           </div>
         </div>
         <div className="pointer-events-none ">
-        <img src={MainPng} alt="" />
-      </div>
+          <img src={MainPng} alt="" />
+        </div>
         <Footer />
       </div>
     </div>

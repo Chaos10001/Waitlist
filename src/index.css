@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 .bg-image {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url("./assets/Frame\ 31927\ \(1\).png");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)); */
+  background: url('./assets/bg.png');
   /* height: 159vh; */
 }
 .footer {
