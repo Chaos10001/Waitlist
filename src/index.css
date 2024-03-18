@@ -30,27 +30,19 @@
     @apply absolute bottom-0 pointer-events-none top-[27rem];
   }
 }
-@media only screen and (min-width: 1920px) and (min-height: 1080px) {
+@media screen and (min-width: 20in) and (max-width: 25in)  {
   .footer {
     @apply pt-[29rem];
   }
   .mainpng {
-    @apply absolute bottom-0 pointer-events-none top-[25rem] left-[14rem];
+    @apply absolute bottom-0 pointer-events-none top-[25rem] left-[16rem];
   }
 }
-@media only screen and (min-width: 2400px) and (min-height: 1300px) {
+@media screen and (min-width: 25in) and (max-width: 29in) {
   .footer {
     @apply pt-[29rem];
   }
   .mainpng {
-    @apply absolute bottom-0 pointer-events-none top-[25rem] left-[27rem];
-  }
-}
-@media only screen and (min-width: 2560px) and (min-height: 1440px) {
-  .footer {
-    @apply pt-[29rem];
-  }
-  .mainpng {
-    @apply absolute bottom-0 pointer-events-none top-[25rem] left-[34rem];
+    @apply absolute bottom-0 pointer-events-none top-[25rem] left-[36rem];
   }
 }
