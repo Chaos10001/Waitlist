@@ -1,13 +1,13 @@
 import React from "react";
 import logo from "../assets/mainfounder.png";
-import MainPng from "../assets/Group 1.png";
+import MainPng from "../assets/MainPng.png";
 import Footer from "./Footer";
 
 const Main = () => {
   return (
     <div>
       {/* desktop */}
-      <div className="text-center justify-center items-center hidden md:block bg-image px-2">
+      <div className="text-center justify-center items-center hidden md:block bg-image px-2 relative">
         <img className="mx-auto" src={logo} alt="" />
         <div className="font-Sora space-y-5">
           <div className="md:hidden ">
@@ -52,9 +52,9 @@ const Main = () => {
             </button>
           </div>
         </div>
-        {/* <div className="absolute bottom-0 pointer-events-none z-100 top-[50%] ">
+        <div className="mainpng">
         <img src={MainPng} alt="" />
-      </div> */}
+      </div>
         <Footer />
       </div>
 
