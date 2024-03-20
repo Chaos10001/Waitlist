@@ -1,9 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import logo from "../assets/mainfounder.png";
 import MainPng from "../assets/MainPng.png";
 import Footer from "./Footer";
+import Modals from "./Modal";
 
 const Main = () => {
+  const [email, setEmail] = useState("");
+  const onSubmit = (e) => {
+    e.preventDefault()
+  }
   return (
     <div>
       {/* desktop */}
@@ -41,20 +47,22 @@ const Main = () => {
             Join a community of founders, startups and online business owners
             like you
           </p>
-          <div>
+
+          <form
+            onSubmit={onSubmit}
+            className="flex justify-center items-center"
+          >
             <input
               className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
               type="email"
               placeholder="Enter your email"
             />
-            <button className="bg-primary md:px-5 md:py-4 px-3 py-3 text-white font-bold rounded-lg">
-              Subscribe
-            </button>
-          </div>
+            <Modals />
+          </form>
         </div>
-        <div className="mainpng">
-        <img src={MainPng} alt="" />
-      </div>
+        <div className="mainpng ">
+          <img src={MainPng} alt="" />
+        </div>
         <Footer />
       </div>
 
@@ -88,16 +96,17 @@ const Main = () => {
             Join a community of founders, startups and online business owners
             like you
           </p>
-          <div>
+          <form
+            onSubmit={onSubmit}
+            className="flex justify-center items-center"
+          >
             <input
               className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
               type="email"
               placeholder="Enter your email"
             />
-            <button className="bg-primary md:px-5 md:py-4 px-3 py-3 text-white font-bold rounded-lg">
-              Subscribe
-            </button>
-          </div>
+            <Modals />
+          </form>
         </div>
         <div className="pointer-events-none ">
           <img src={MainPng} alt="" />

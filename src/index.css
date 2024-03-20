@@ -4,18 +4,54 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-image {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)); */
-  /* background: url("./assets/bg.png"); */
-  /* height: 159vh; */
-}
 .footer {
   @apply pt-[16rem];
 }
 .mainpng {
   @apply absolute bottom-0 pointer-events-none top-[23rem];
-  /* @apply absolute inset-0 m-auto max-w-full max-h-full pointer-events-none ; */
 }
+
+/* modal styles */
+.__join_waitlist {
+  @apply bg-black md:w-[100vh] w-[45vh] rounded-xl border-primary border-2 border-solid;
+}
+.__join_waitlist_content {
+  @apply md:pt-[2rem] pt-[1.8rem] md:px-[3rem] px-[1rem];
+}
+.__modal_text {
+  background: linear-gradient(rgba(255, 102, 0, 0.3),rgba(255, 102, 0, 0));
+  /* @apply h-[1]; */
+}
+.__close_btn {
+  @apply md:pl-[90%] pl-[85%] md:pt-[1rem] pt-[1rem];
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+  /* width: 100vw; */
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0);
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+}
+
 @media only screen and (min-width: 1366px) and (min-height: 768px) {
   .footer {
     @apply pt-[19rem];
@@ -30,7 +66,7 @@
     @apply absolute bottom-0 pointer-events-none top-[27rem];
   }
 }
-@media screen and (min-width: 20in) and (max-width: 25in)  {
+@media screen and (min-width: 20in) and (max-width: 25in) {
   .footer {
     @apply pt-[29rem];
   }

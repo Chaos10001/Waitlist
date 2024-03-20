@@ -17,7 +17,7 @@ const Footer = () => {
           <img src={Instagram} alt="" />
         </div>
       </div>
-      <h1 className="font-Sora text-center text-md md:text-xl text-white py-5">
+      <h1 className="font-Sora text-center text-md md:text-lg text-white py-5">
         © MainFounder Inc. All rights reserved.
       </h1>
       </div>
@@ -31,7 +31,7 @@ const Footer = () => {
           <img src={Instagram} alt="" />
         </div>
       </div>
-      <h1 className="font-Sora text-center text-md md:text-xl text-white py-5">
+      <h1 className="font-Sora text-center text-md md:text-md text-white py-5">
         © MainFounder Inc. All rights reserved.
       </h1>
     </div>
