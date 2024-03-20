@@ -13,13 +13,13 @@
 
 /* modal styles */
 .__join_waitlist {
-  @apply bg-black md:w-[100vh] w-[45vh] rounded-xl border-primary border-2 border-solid;
+  @apply bg-black md:w-[110vh] w-[45vh] rounded-xl border-primary border-2 border-solid;
 }
 .__join_waitlist_content {
-  @apply md:pt-[2rem] pt-[1.8rem] md:px-[3rem] px-[1rem];
+  @apply md:pt-[1rem] pt-[1.8rem] md:px-[3rem] px-[1rem];
 }
 .__modal_text {
-  background: linear-gradient(rgba(255, 102, 0, 0.3),rgba(255, 102, 0, 0));
+  background: linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0));
   /* @apply h-[1]; */
 }
 .__close_btn {
@@ -42,7 +42,7 @@ body.active-modal {
 }
 
 .overlay {
-  background: rgba(49, 49, 49, 0);
+  background: rgba(0, 0, 0, 0.9);
 }
 .modal-content {
   position: absolute;

@@ -32,55 +32,39 @@ const Modals = () => {
                   onClick={closeModal}
                 />
               </div>
-              <div className="__join_waitlist_content font-Sora space-y-2  mb-[3rem]">
-                <div className="md:space-y-4 space-y-3 text-left mb-[10%]">
-                  <h2 className="text-white md:text-lg text-sm">
-                    Hey there, Hilary here!
-                  </h2>
-                  <h2 className="text-white md:text-lg text-sm">
-                    {" "}
-                    Big thanks for joining Notes from MainFounder! You've just
-                    opened the door to a world brimming with entrepreneurial
-                    wisdom. From scaling secrets to starting up online, we've
-                    got your back on this adventure to success and freedom.
-                  </h2>
-                  <h2 className="text-white md:text-lg text-sm">
-                    👀 Keep an eye on your inbox; your very first piece, packed
-                    with growth tips and insights, is coming your way. Plus,
-                    I've dropped a special gift in there for you!
-                  </h2>
-                  <h2 className="text-white md:text-lg text-sm">
-                    Excited to journey with you to the top. Welcome to the
-                    family!
-                  </h2>
-                  <h2 className="text-white md:text-lg text-sm">Cheers,</h2>
-                  <h2 className=" text-lg font-extrabold text-primary">
-                    Hilary Utuke from MainFounder
-                  </h2>
-                </div>
-                <div className="__modal_text py-[7%] border-t-8 border-primary ">
-                  <h2 className="text-white md:text-lg text-sm mb-4">
-                    If you read{" "}
-                    <span className="md:font-extrabold font-bold">
-                      Notes from MainFounder
-                    </span>{" "}
-                    on Gmail: move Notes from MainFounder to your primary inbox.
-                    How?
-                  </h2>
-                  <h2 className="text-white md:text-lg text-sm">
-                    <span className="font-extrabold">On your phone:</span>
-                    Tap the 3 dots in the top right corner of an email from us,
-                    click <span className="font-extrabold">"Move to"</span> ,
-                    then click{" "}
-                    <span className="font-extrabold">"Primary".</span>
-                  </h2>
-                  <h2 className="text-white md:text-lg text-sm">
-                    <span className="font-extrabold">On desktop:</span>
-                    Drag and drop this email into the "Primary" tab in your
-                    inbox. If you use Apple Mail: tap on our email address at
-                    the top of this email (in the "From" line) and click "Add to
-                    VIPs".
-                  </h2>
+              <div className="__join_waitlist_content font-Sora mb-[3rem]">
+                <div className="__modal_text border-t-4 rounded-2xl text-left border-primary px-8">
+                  <div className="py-[10%]">
+                    <h2 className="text-white md:text-lg text-sm mb-4">
+                      You’re in! Thanks for subscribing
+                    </h2>
+                    <h2 className="text-white md:text-lg text-sm mb-4">
+                      In few moments, I’ll send you an email to welcome you.
+                    </h2>
+                    <h2 className="text-white md:text-lg text-sm mb-4">
+                      You've just opened the door to a world brimming with
+                      entrepreneurial wisdom. From scaling secrets to starting
+                      up online, we've got your back on this adventure to
+                      success and freedom.
+                    </h2>
+                    <h2 className="text-white md:text-lg text-sm mb-4">
+                      We have moved you to an exclusive list. MainFounder has a
+                      special deal for you when our platform is launched.
+                      (Imagine access to a database of resources, case studies,
+                      accountability system, frameworks, business ideas,
+                      webinars, and more…)
+                    </h2>
+                    <h2 className="text-white md:text-lg text-sm mb-4">
+                      Excited to journey with you to the top. Welcome to the
+                      family!
+                    </h2>
+                    <h2 className="text-white md:text-lg text-sm mb-4">
+                      Cheers,
+                    </h2>
+                    <h2 className="text-primary md:text-lg text-sm mb-4 font-bold">
+                      Hilary Utuke from MainFounder
+                    </h2>
+                  </div>
                 </div>
               </div>
             </div>

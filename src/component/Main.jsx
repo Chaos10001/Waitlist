@@ -8,8 +8,8 @@ import Modals from "./Modal";
 const Main = () => {
   const [email, setEmail] = useState("");
   const onSubmit = (e) => {
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
   return (
     <div>
       {/* desktop */}
