@@ -28,7 +28,7 @@ const Main = () => {
             Elevate Your Entrepreneurial Journey - For Free
           </p>
           <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem] hidden md:block">
-            Notes from MainFounder
+            Notes from <span className="text-primary">MainFounder</span>
           </h1>
           <p className="text-gray-300 md:text-lg text-md md:mx-[21rem]">
             Subscribe to Notes from MainFounder Newsletter and unlock a wealth
@@ -38,9 +38,9 @@ const Main = () => {
             <span className="text-primary"> without the price tag.</span>
             <br />
             Every column brings you closer to
-            <span className="text-white">
+            <span className="text-white font-bold">
               {" "}
-              freedom + millions of dollars. We meant this!
+              freedom + millions of dollars. We mean this!
             </span>
           </p>
           <p className="text-white md:text-sm text-sm">
@@ -70,26 +70,29 @@ const Main = () => {
       <div className="text-center justify-center md:hidden items-center px-2 bg-black">
         <img className="mx-auto pt-[15%] mb-[11%]" src={logo} alt="" />
         <div className="font-Sora space-y-5">
-          <div className='space-y-2'>
+          <div className="space-y-2">
             <p className="text-white text-sm">
               Elevate Your Entrepreneurial Journey - For Free
             </p>
             <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem]">
-              Notes from MainFounder
+              Notes from <span className="text-primary">MainFounder</span>
             </h1>
           </div>
 
           <p className="text-gray-300 text-md px-2">
             Subscribe to{" "}
-            <span className="text-primary text-lg font-bold">Notes from MainFounder</span>
+            <span className="text-lg font-bold">Notes from MainFounder </span>{" "}
             Newsletter and unlock a wealth of knowledge and resources. From
             in-depth guides on scaling your startup to actionable growth tactics
             to starting your online business, we're here to fuel your business
             journey,
             <span className="text-primary"> without the price tag.</span>
             <p className="text-gray-300">
-              Every column brings you closer to freedom + millions of dollars.
-              <span className="text-white">We meant this!</span>
+              Every column brings you closer to
+              <span className="text-white font-bold">
+                {" "}
+                freedom + millions of dollars. We mean this!
+              </span>
             </p>
           </p>
           <p className="text-white md:text-sm text-sm">

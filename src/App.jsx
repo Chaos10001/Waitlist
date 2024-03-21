@@ -3,7 +3,7 @@ import Main from "./component/Main";
 
 function App() {
   return (
-    <div className="bg-black">
+    <div className="bg-[#111111]">
       <Main />
       {/* <Footer/> */}
     </div>
