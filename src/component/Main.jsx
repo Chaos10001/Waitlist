@@ -68,9 +68,9 @@ const Main = () => {
 
       {/* Mobile Screen */}
       <div className="text-center justify-center md:hidden items-center px-2 bg-black">
-        <img className="mx-auto" src={logo} alt="" />
+        <img className="mx-auto pt-[15%] mb-[11%]" src={logo} alt="" />
         <div className="font-Sora space-y-5">
-          <div>
+          <div className='space-y-2'>
             <p className="text-white text-sm">
               Elevate Your Entrepreneurial Journey - For Free
             </p>
@@ -79,9 +79,9 @@ const Main = () => {
             </h1>
           </div>
 
-          <p className="text-gray-300 text-md md:mx-[22rem]">
+          <p className="text-gray-300 text-md px-2">
             Subscribe to{" "}
-            <span className="text-primary text-lg">Notes from MainFounder</span>
+            <span className="text-primary text-lg font-bold">Notes from MainFounder</span>
             Newsletter and unlock a wealth of knowledge and resources. From
             in-depth guides on scaling your startup to actionable growth tactics
             to starting your online business, we're here to fuel your business
