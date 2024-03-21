@@ -81,7 +81,7 @@ const Main = () => {
 
           <p className="text-gray-300 text-md px-2">
             Subscribe to{" "}
-            <span className="font-bold">Notes from MainFounder </span>{" "}
+            <span className="font-medium">Notes from MainFounder </span>{" "}
             Newsletter and unlock a wealth of knowledge and resources. From
             in-depth guides on scaling your startup to actionable growth tactics
             to starting your online business, we're here to fuel your business
