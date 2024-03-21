@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FF6600",
+        primary: "#FC7D3A",
       },
       fontFamily: {
         Sora: ["Sora", "serif"],

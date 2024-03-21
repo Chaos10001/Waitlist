@@ -14,7 +14,7 @@ const Main = () => {
     <div>
       {/* desktop */}
       <div className="text-center justify-center items-center hidden md:block bg-image px-2 relative">
-        <img className="mx-auto" src={logo} alt="" />
+        <img className="mx-auto pt-[7%] mb-[3%]" src={logo} alt="" />
         <div className="font-Sora space-y-5">
           <div className="md:hidden ">
             <p className="text-white text-sm">
@@ -28,20 +28,20 @@ const Main = () => {
             Elevate Your Entrepreneurial Journey - For Free
           </p>
           <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem] hidden md:block">
-            Subscribe to a community of <br /> successful founders.
+            Notes from MainFounder
           </h1>
-          <p className="text-gray-300 md:text-lg text-md md:mx-[22rem]">
-            Subscribe to{" "}
-            <span className="text-primary text-lg">MainFounder</span>
-            Newsletter and unlock a wealth of knowledge and resources. From
-            in-depth guides on scaling your startup to actionable growth tactics
-            to starting your online business, we're here to fuel your business
-            journey,
+          <p className="text-gray-300 md:text-lg text-md md:mx-[21rem]">
+            Subscribe to Notes from MainFounder Newsletter and unlock a wealth
+            of knowledge and resources. From in-depth guides on scaling your
+            startup to actionable growth tactics to starting your online
+            business, we're here to fuel your business journey,
             <span className="text-primary"> without the price tag.</span>
-            <p className="text-gray-300">
-              Every column brings you closer to freedom + millions of dollars.
-              <span className="text-white">We meant this!</span>
-            </p>
+            <br />
+            Every column brings you closer to
+            <span className="text-white">
+              {" "}
+              freedom + millions of dollars. We meant this!
+            </span>
           </p>
           <p className="text-white md:text-sm text-sm">
             Join a community of founders, startups and online business owners
@@ -75,13 +75,13 @@ const Main = () => {
               Elevate Your Entrepreneurial Journey - For Free
             </p>
             <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem]">
-              Subscribe to a community of successful founders.
+              Notes from MainFounder
             </h1>
           </div>
 
-          <p className="text-gray-300 md:text-lg text-md md:mx-[22rem]">
+          <p className="text-gray-300 text-md md:mx-[22rem]">
             Subscribe to{" "}
-            <span className="text-primary text-lg">MainFounder</span>
+            <span className="text-primary text-lg">Notes from MainFounder</span>
             Newsletter and unlock a wealth of knowledge and resources. From
             in-depth guides on scaling your startup to actionable growth tactics
             to starting your online business, we're here to fuel your business

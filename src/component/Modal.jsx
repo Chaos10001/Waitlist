@@ -17,7 +17,7 @@ const Modals = () => {
         className="bg-primary md:px-5 md:py-4 px-3 py-3 text-white font-bold rounded-lg"
         onClick={toggleModal}
       >
-        Subscribe
+        Try for free
       </button>
 
       {modal && (

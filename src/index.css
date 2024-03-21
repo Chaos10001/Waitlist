@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .footer {
-  @apply pt-[16rem];
+  @apply pt-[23%];
 }
 .mainpng {
   @apply absolute bottom-0 pointer-events-none top-[23rem];
@@ -39,6 +39,7 @@ body.active-modal {
   right: 0;
   bottom: 0;
   position: absolute;
+  z-index: 90;
 }
 
 .overlay {
