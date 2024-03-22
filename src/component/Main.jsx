@@ -27,10 +27,10 @@ const Main = () => {
           <p className="text-white text-sm hidden md:block">
             Elevate Your Entrepreneurial Journey - For Free
           </p>
-          <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem] hidden md:block">
+          <h1 className="text-white text-3xl  font-bold md:mx-[22rem] hidden md:block">
             Notes from <span className="text-primary">MainFounder</span>
           </h1>
-          <p className="text-gray-300 md:text-lg text-md md:mx-[21rem]">
+          <p className="md:text-lg text-md text-gray-300 mx-[28%]">
             Subscribe to Notes from MainFounder Newsletter and unlock a wealth
             of knowledge and resources. From in-depth guides on scaling your
             startup to actionable growth tactics to starting your online

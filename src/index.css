@@ -19,7 +19,7 @@
   @apply md:pt-[1rem] pt-[1.8rem] md:px-[3rem] px-[1rem];
 }
 .__modal_text {
-  background: linear-gradient(rgba(255, 102, 0, 0.4),rgba(255, 102, 0, 0));
+  background: linear-gradient(rgba(255, 102, 0, 0.4), rgba(255, 102, 0, 0));
   /* @apply h-[1]; */
 }
 .__close_btn {
@@ -74,6 +74,9 @@ body.active-modal {
   .mainpng {
     @apply absolute bottom-0 pointer-events-none top-[25rem] left-[16rem];
   }
+  /* .__main_content {
+    @apply text-gray-300  mx-[30%];
+  } */
 }
 @media screen and (min-width: 25in) and (max-width: 29in) {
   .footer {
