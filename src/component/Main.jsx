@@ -74,7 +74,7 @@ const Main = () => {
             <p className="text-white text-sm">
               Elevate Your Entrepreneurial Journey - For Free
             </p>
-            <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem]">
+            <h1 className="text-white text-3xl font-bold md:mx-[22rem]">
               Notes from <span className="text-primary">MainFounder</span>
             </h1>
           </div>
