@@ -30,7 +30,7 @@ const Footer = () => {
         </a>
       </div>
       {/* Mobile */}
-      <div className="items-center justify-center text-center md:hidden py-[7rem]">
+      <div className="items-center justify-center text-center md:hidden pb-[50%] pt-[8%]">
         <div className="flex ">
           <div className="mx-auto flex space-x-5 cursor-pointer">
             <img src={Twitter} alt="" />
