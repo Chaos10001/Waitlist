@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import logo from "../assets/mainfounder.png";
+import logo from "../assets/img.png";
 import MainPng from "../assets/MainPng.png";
 import Footer from "./Footer";
 import Modals from "./Modal";
@@ -16,32 +16,12 @@ const Main = () => {
       <div className="text-center justify-center items-center hidden md:block bg-image px-2 relative">
         <img className="mx-auto pt-[7%] mb-[3%]" src={logo} alt="" />
         <div className="font-Sora space-y-5">
-          <div className="md:hidden ">
-            <p className="text-white text-sm">
-              Elevate Your Entrepreneurial Journey - For Free
-            </p>
-            <h1 className="text-white md:text-4xl text-2xl font-bold md:mx-[22rem]">
-              Subscribe to a community of successful founders.
-            </h1>
-          </div>
-          <p className="text-white text-sm hidden md:block">
-            Elevate Your Entrepreneurial Journey - For Free
-          </p>
           <h1 className="text-white text-[40px]  font-bold md:mx-[22rem] hidden md:block">
             Notes from <span className="text-primary">MainFounder</span>
           </h1>
           <p className="md:text-lg text-md text-gray-300 mx-[28%]">
-            Subscribe to Notes from MainFounder Newsletter and unlock a wealth
-            of knowledge and resources. From in-depth guides on scaling your
-            startup to actionable growth tactics to starting your online
-            business, we're here to fuel your business journey,
-            <span className="text-primary"> without the price tag.</span>
-            <br />
-            Every column brings you closer to
-            <span className="text-white font-bold">
-              {" "}
-              freedom + millions of dollars. We mean this!
-            </span>
+            Join founders getting tactical tips and insights on building,
+            growing, and scaling their startup and online venture.
           </p>
           <p className="text-white md:text-sm text-sm">
             Join a community of founders, startups and online business owners
@@ -71,31 +51,15 @@ const Main = () => {
         <img className="mx-auto pt-[15%] mb-[11%]" src={logo} alt="" />
         <div className="font-Sora space-y-5">
           <div className="space-y-2">
-            <p className="text-white text-sm">
-              Elevate Your Entrepreneurial Journey - For Free
-            </p>
             <h1 className="text-white text-[32px] font-bold md:mx-[22rem]">
               Notes from <span className="text-primary">MainFounder</span>
             </h1>
           </div>
 
           <p className="text-gray-300 text-md px-2">
-            Subscribe to{" "}
-            <span className="font-medium">Notes from MainFounder </span>{" "}
-            Newsletter and unlock a wealth of knowledge and resources. From
-            in-depth guides on scaling your startup to actionable growth tactics
-            to starting your online business, we're here to fuel your business
-            journey,
-            <span className="text-primary"> without the price tag.</span>
-            <p className="text-gray-300">
-              Every column brings you closer to
-              <span className="text-white font-bold">
-                {" "}
-                freedom + millions of dollars. We mean this!
-              </span>
-            </p>
+            Join founders getting tactical tips and insights on building, growing, and scaling their startup and online venture.
           </p>
-          <p className="text-white md:text-sm text-sm">
+          <p className="text-white text-sm">
             Join a community of founders, startups and online business owners
             like you
           </p>

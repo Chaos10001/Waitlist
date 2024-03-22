@@ -8,7 +8,7 @@
   @apply pt-[23%];
 }
 .mainpng {
-  @apply absolute bottom-0 pointer-events-none top-[23rem];
+  @apply absolute bottom-0 pointer-events-none top-[27%];
 }
 
 /* modal styles */

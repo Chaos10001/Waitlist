@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="mx-auto flex space-x-5 cursor-pointer">
             <img src={Twitter} alt="" />
             <img src={Linkdin} alt="" />
-            <img src={Facebook} alt="" />
+            {/* <img src={Facebook} alt="" /> */}
             <img src={Instagram} alt="" />
           </div>
         </div>
@@ -25,17 +25,17 @@ const Footer = () => {
           target="_blank"
         >
           <h1 className="font-Sora text-center pt-[0.7%] text-sm  text-white py-5">
-            Privacy Policies
+            Privacy Policy
           </h1>
         </a>
       </div>
       {/* Mobile */}
-      <div className="items-center justify-center text-center md:hidden py-[4rem]">
+      <div className="items-center justify-center text-center md:hidden py-[7rem]">
         <div className="flex ">
           <div className="mx-auto flex space-x-5 cursor-pointer">
             <img src={Twitter} alt="" />
             <img src={Linkdin} alt="" />
-            <img src={Facebook} alt="" />
+            {/* <img src={Facebook} alt="" /> */}
             <img src={Instagram} alt="" />
           </div>
         </div>
@@ -47,7 +47,7 @@ const Footer = () => {
           target="_blank"
         >
           <h1 className="font-Sora text-center pt-[2%] text-sm  text-white py-5">
-            Privacy Policies
+            Privacy Policy
           </h1>
         </a>
       </div>
