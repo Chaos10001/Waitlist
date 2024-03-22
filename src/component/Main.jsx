@@ -27,7 +27,7 @@ const Main = () => {
           <p className="text-white text-sm hidden md:block">
             Elevate Your Entrepreneurial Journey - For Free
           </p>
-          <h1 className="text-white text-3xl  font-bold md:mx-[22rem] hidden md:block">
+          <h1 className="text-white text-[40px]  font-bold md:mx-[22rem] hidden md:block">
             Notes from <span className="text-primary">MainFounder</span>
           </h1>
           <p className="md:text-lg text-md text-gray-300 mx-[28%]">
@@ -74,7 +74,7 @@ const Main = () => {
             <p className="text-white text-sm">
               Elevate Your Entrepreneurial Journey - For Free
             </p>
-            <h1 className="text-white text-3xl font-bold md:mx-[22rem]">
+            <h1 className="text-white text-[32px] font-bold md:mx-[22rem]">
               Notes from <span className="text-primary">MainFounder</span>
             </h1>
           </div>
