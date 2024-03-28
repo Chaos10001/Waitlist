@@ -6,9 +6,32 @@ import Footer from "./Footer";
 import Modals from "./Modal";
 
 const Main = () => {
+  // const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+  // const apiUrl = "https://iavsa-cmpzourl.maillist-manage.com/weboptin.zc";
   const [email, setEmail] = useState("");
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
+    try {
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({
+          email,
+        }),
+      });
+      if (response.ok) {
+        console.log("Submited");
+        setEmail("");
+      } else {
+        console.error("Failed");
+      }
+    } catch (error) {
+      console.error("Error Submitting", error);
+    }
   };
   return (
     <div>
@@ -27,18 +50,38 @@ const Main = () => {
             Join a community of founders, startups and online business owners
             like you
           </p>
-
           <form
+            method="POST"
+            className="flex justify-center items-center"
+            id="zcampaignOptinForm"
+            onSubmit={onSubmit}
+          >
+            <input
+              type="text"
+              className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
+              placeholder="Enter your email"
+              changeitem="SIGNUP_FORM_FIELD"
+              name="CONTACT_EMAIL"
+              id="EMBED_FORM_EMAIL_LABEL"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+
+            <Modals />
+          </form>
+
+          {/* <form
             onSubmit={onSubmit}
             className="flex justify-center items-center"
           >
             <input
               className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
               type="email"
+              value={email}
               placeholder="Enter your email"
+              onChange={(e) => setEmail(e.target.value)}
             />
             <Modals />
-          </form>
+          </form> */}
         </div>
         <div className="mainpng ">
           <img src={MainPng} alt="" />
@@ -57,7 +100,8 @@ const Main = () => {
           </div>
 
           <p className="text-gray-300 text-md px-2">
-            Join founders getting tactical tips and insights on building, growing, and scaling their startup and online venture.
+            Join founders getting tactical tips and insights on building,
+            growing, and scaling their startup and online venture.
           </p>
           <p className="text-white text-sm">
             Join a community of founders, startups and online business owners
@@ -65,13 +109,13 @@ const Main = () => {
           </p>
           <form
             onSubmit={onSubmit}
-            className="flex justify-center items-center"
+            // className="flex justify-center items-center"
           >
-            <input
+            {/* <input
               className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
               type="email"
               placeholder="Enter your email"
-            />
+            /> */}
             <Modals />
           </form>
         </div>

@@ -10,12 +10,23 @@ const Modals = () => {
   const toggleModal = () => {
     setModal(!modal);
   };
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <div>
+      {/* <iframe
+        title="Zoho Form"
+        src="https://zc.vg/5kJbW"
+        width="100%"
+        onClick={toggleModal}  
+        onClick={onSubmit}
+      ></iframe> */}
       <button
         className="bg-primary md:px-5 md:py-4 px-3 py-3 text-white font-bold rounded-lg"
         onClick={toggleModal}
+        type="submit"
       >
         Try for free
       </button>

@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
         </div>
         <h1 className="font-Sora text-center text-md  text-white py-5">
-          © MainFounder Inc. All rights reserved.
+          © MainFounder by Vasdesk, LLC. All rights reserved.
         </h1>
         <a
           href="https://docs.google.com/document/d/19UYjmGqJsUt3qPNTbQm36xMgpB1nEukstgXRMxdILqU/edit?usp=sharing"
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         <h1 className="font-Sora text-center text-md md:text-sm text-white py-5">
-          © MainFounder Inc. All rights reserved.
+          © MainFounder by Vasdesk, LLC. All rights reserved.
         </h1>
         <a
           href="https://docs.google.com/document/d/19UYjmGqJsUt3qPNTbQm36xMgpB1nEukstgXRMxdILqU/edit?usp=sharing"

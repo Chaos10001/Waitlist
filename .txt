@@ -1,0 +1,27 @@
+// const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+  // const apiUrl = "https://zc.vg/5kJbW";
+  const [email, setEmail] = useState("");
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({
+          email,
+        }),
+      });
+      if (response.ok) {
+        console.log("Submited");
+        setEmail("");
+      } else {
+        console.error("Failed");
+      }
+    } catch (error) {
+      console.error("Error Submitting", error);
+    }
+  };
