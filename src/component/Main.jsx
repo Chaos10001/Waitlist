@@ -8,13 +8,15 @@ import Modals from "./Modal";
 const Main = () => {
   // const proxyUrl = "https://cors-anywhere.herokuapp.com/";
   // const apiUrl = "https://iavsa-cmpzourl.maillist-manage.com/weboptin.zc";
+  const apiUrl =
+    "https://assets.mailerlite.com/jsonp/889836/forms/117174385740089212/subscribe";
   const [email, setEmail] = useState("");
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await fetch(apiUrl, {
         method: "POST",
-        mode: "no-cors",
+        // mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": "*",
@@ -51,26 +53,8 @@ const Main = () => {
             like you
           </p>
           <form
-            method="POST"
-            className="flex justify-center items-center"
-            id="zcampaignOptinForm"
             onSubmit={onSubmit}
-          >
-            <input
-              type="text"
-              className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
-              placeholder="Enter your email"
-              changeitem="SIGNUP_FORM_FIELD"
-              name="CONTACT_EMAIL"
-              id="EMBED_FORM_EMAIL_LABEL"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-
-            <Modals />
-          </form>
-
-          {/* <form
-            onSubmit={onSubmit}
+            data-code=""
             className="flex justify-center items-center"
           >
             <input
@@ -79,9 +63,10 @@ const Main = () => {
               value={email}
               placeholder="Enter your email"
               onChange={(e) => setEmail(e.target.value)}
+              name="fields[email]"
             />
             <Modals />
-          </form> */}
+          </form>
         </div>
         <div className="mainpng ">
           <img src={MainPng} alt="" />
@@ -109,13 +94,17 @@ const Main = () => {
           </p>
           <form
             onSubmit={onSubmit}
-            // className="flex justify-center items-center"
+            className="flex justify-center items-center"
+            data-code=""
           >
-            {/* <input
+            <input
               className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
               type="email"
+              value={email}
               placeholder="Enter your email"
-            /> */}
+              onChange={(e) => setEmail(e.target.value)}
+              name="fields[email]"
+            />
             <Modals />
           </form>
         </div>
