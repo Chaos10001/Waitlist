@@ -5,11 +5,13 @@ import { toast } from "react-toastify";
 
 const Form = () => {
   const [email, setEmail] = useState("");
+  const [showModal, setShowModal] = useState(false);
   const onSubmit = () => {
     if (!email) {
       toast.error("input your email");
     } else {
       toast.success("email submitted");
+      setShowModal(true);
     }
   };
   return (
@@ -61,10 +63,17 @@ const Form = () => {
                 {/* /Privacy policy */}
                 <input type="hidden" name="ml-submit" defaultValue={1} />
                 <div className="ml-form-embedSubmit">
-                  <Modals />
-                  {/* <button type="submit" className="primary">
-                    Subscribe
-                  </button> */}
+                  {/* <Modals /> */}
+                  <button
+                    className="bg-primary md:px-5 md:py-4 px-3 py-3 text-white font-bold rounded-lg"
+                    type="submit"
+                  >
+                    Try for free
+                  </button>
+                  {showModal && (
+                    <Modals closeModal={() => setShowModal(false)} />
+                  )}
+
                   <button
                     disabled="disabled"
                     style={{ display: "none" }}
