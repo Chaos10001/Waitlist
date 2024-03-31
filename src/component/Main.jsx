@@ -1,40 +1,11 @@
 import React from "react";
-import { useState } from "react";
 import logo from "../assets/img.png";
 import MainPng from "../assets/MainPng.png";
 import Footer from "./Footer";
-import Modals from "./Modal";
+import "react-toastify/dist/ReactToastify.css";
+import Form from "./Form";
 
 const Main = () => {
-  // const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-  // const apiUrl = "https://iavsa-cmpzourl.maillist-manage.com/weboptin.zc";
-  const apiUrl =
-    "https://assets.mailerlite.com/jsonp/889836/forms/117174385740089212/subscribe";
-  const [email, setEmail] = useState("");
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch(apiUrl, {
-        method: "POST",
-        // mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-        body: JSON.stringify({
-          email,
-        }),
-      });
-      if (response.ok) {
-        console.log("Submited");
-        setEmail("");
-      } else {
-        console.error("Failed");
-      }
-    } catch (error) {
-      console.error("Error Submitting", error);
-    }
-  };
   return (
     <div>
       {/* desktop */}
@@ -52,21 +23,7 @@ const Main = () => {
             Join a community of founders, startups and online business owners
             like you
           </p>
-          <form
-            onSubmit={onSubmit}
-            data-code=""
-            className="flex justify-center items-center"
-          >
-            <input
-              className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
-              type="email"
-              value={email}
-              placeholder="Enter your email"
-              onChange={(e) => setEmail(e.target.value)}
-              name="fields[email]"
-            />
-            <Modals />
-          </form>
+          <Form />
         </div>
         <div className="mainpng ">
           <img src={MainPng} alt="" />
@@ -92,21 +49,7 @@ const Main = () => {
             Join a community of founders, startups and online business owners
             like you
           </p>
-          <form
-            onSubmit={onSubmit}
-            className="flex justify-center items-center"
-            data-code=""
-          >
-            <input
-              className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
-              type="email"
-              value={email}
-              placeholder="Enter your email"
-              onChange={(e) => setEmail(e.target.value)}
-              name="fields[email]"
-            />
-            <Modals />
-          </form>
+          <Form />
         </div>
         <div className="pointer-events-none ">
           <img src={MainPng} alt="" />
