@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/img.png";
 import MainPng from "../assets/MainPng.png";
 import Footer from "./Footer";
 import "react-toastify/dist/ReactToastify.css";
 import Form from "./Form";
+import { toast } from "react-toastify";
 
 const Main = () => {
+  
   return (
     <div>
       {/* desktop */}

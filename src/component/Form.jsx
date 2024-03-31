@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Modals from "./Modal";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 
 const Form = () => {
+  const [email, setEmail] = useState("");
+  const onSubmit = () => {
+    if (!email) {
+      toast.error("input your email");
+    } else {
+      toast.success("email submitted");
+    }
+  };
   return (
     <div>
       <style
@@ -26,6 +36,7 @@ const Form = () => {
                 data-code
                 method="post"
                 target="_blank"
+                onSubmit={onSubmit}
               >
                 <div className="ml-form-formContent">
                   <div className="ml-form-fieldRow ml-last-item">
@@ -38,8 +49,10 @@ const Form = () => {
                         className=" md:w-[26rem] w-[12rem] md:h-[3.6rem] h-[3rem] px-3 bg-transparent text-white border border-white rounded-lg mx-2"
                         data-inputmask
                         name="fields[email]"
-                        placeholder="Email"
+                        placeholder="Enter your Email"
                         autoComplete="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                   </div>
